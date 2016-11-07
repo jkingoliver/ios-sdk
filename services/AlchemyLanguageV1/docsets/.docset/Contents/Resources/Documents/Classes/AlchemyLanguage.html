@@ -170,6 +170,60 @@ high-level semantic information about your content.</p>
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:vC17AlchemyLanguageV115AlchemyLanguage10serviceUrlSS"></a>
+                    <a name="//apple_ref/swift/Property/serviceUrl" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC17AlchemyLanguageV115AlchemyLanguage10serviceUrlSS">serviceUrl</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The base URL to use when contacting the service.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">serviceUrl</span> <span class="o">=</span> <span class="s">"https://gateway-a.watsonplatform.net/calls"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC17AlchemyLanguageV115AlchemyLanguage14defaultHeadersGVs10DictionarySSSS_"></a>
+                    <a name="//apple_ref/swift/Property/defaultHeaders" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC17AlchemyLanguageV115AlchemyLanguage14defaultHeadersGVs10DictionarySSSS_">defaultHeaders</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The default HTTP headers for all requests to the service.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">defaultHeaders</span> <span class="o">=</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">String</span><span class="p">]()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:FC17AlchemyLanguageV115AlchemyLanguagecFT6apiKeySS_S0_"></a>
                     <a name="//apple_ref/swift/Method/init(apiKey:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguagecFT6apiKeySS_S0_">init(apiKey:)</a>
@@ -180,7 +234,7 @@ high-level semantic information about your content.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Initilizes the AlchemyLanguage service</p>
+                        <p>Create an <code>AlchemyLanguage</code> object.</p>
 
                       </div>
                       <div class="declaration">
@@ -191,15 +245,35 @@ high-level semantic information about your content.</p>
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>apiKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The API key credential to use when authenticating with the service.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage10getAuthorsFT6forURLSS7failureGSqFCSo7NSErrorT__7successFVS_15DocumentAuthorsT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getAuthors(forURL:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage10getAuthorsFT6forURLSS7failureGSqFCSo7NSErrorT__7successFVS_15DocumentAuthorsT__T_">getAuthors(forURL:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage10getAuthorsFT16fromContentAtURLSS7failureGSqFPs5Error_T__7successFVS_15DocumentAuthorsT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getAuthors(fromContentAtURL:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage10getAuthorsFT16fromContentAtURLSS7failureGSqFPs5Error_T__7successFVS_15DocumentAuthorsT__T_">getAuthors(fromContentAtURL:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -215,9 +289,9 @@ high-level semantic information about your content.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getAuthors</span><span class="p">(</span>
-        <span class="n">forURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/DocumentAuthors.html">DocumentAuthors</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="n">fromContentAtURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/DocumentAuthors.html">DocumentAuthors</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -273,9 +347,9 @@ high-level semantic information about your content.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage10getAuthorsFT7forHtmlCSo5NSURL3urlGSqSS_7failureGSqFCSo7NSErrorT__7successFVS_15DocumentAuthorsT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getAuthors(forHtml:url:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage10getAuthorsFT7forHtmlCSo5NSURL3urlGSqSS_7failureGSqFCSo7NSErrorT__7successFVS_15DocumentAuthorsT__T_">getAuthors(forHtml:url:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage10getAuthorsFT12fromHTMLFileV10Foundation3URL7withURLGSqSS_7failureGSqFPs5Error_T__7successFVS_15DocumentAuthorsT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getAuthors(fromHTMLFile:withURL:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage10getAuthorsFT12fromHTMLFileV10Foundation3URL7withURLGSqSS_7failureGSqFPs5Error_T__7successFVS_15DocumentAuthorsT__T_">getAuthors(fromHTMLFile:withURL:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -291,10 +365,10 @@ high-level semantic information about your content.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getAuthors</span><span class="p">(</span>
-        <span class="n">forHtml</span> <span class="nv">html</span><span class="p">:</span> <span class="kt">NSURL</span><span class="p">,</span>
-        <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/DocumentAuthors.html">DocumentAuthors</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="n">fromHTMLFile</span> <span class="nv">html</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span>
+        <span class="n">withURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/DocumentAuthors.html">DocumentAuthors</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -363,9 +437,9 @@ high-level semantic information about your content.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage17getRankedConceptsFT6forURLSS14knowledgeGraphGSqOS_10QueryParam_7failureGSqFCSo7NSErrorT__7successFVS_15ConceptResponseT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getRankedConcepts(forURL:knowledgeGraph:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage17getRankedConceptsFT6forURLSS14knowledgeGraphGSqOS_10QueryParam_7failureGSqFCSo7NSErrorT__7successFVS_15ConceptResponseT__T_">getRankedConcepts(forURL:knowledgeGraph:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage17getRankedConceptsFT16fromContentAtURLSS14knowledgeGraphGSqOS_10QueryParam_7failureGSqFPs5Error_T__7successFVS_15ConceptResponseT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getRankedConcepts(fromContentAtURL:knowledgeGraph:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage17getRankedConceptsFT16fromContentAtURLSS14knowledgeGraphGSqOS_10QueryParam_7failureGSqFPs5Error_T__7successFVS_15ConceptResponseT__T_">getRankedConcepts(fromContentAtURL:knowledgeGraph:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -381,10 +455,10 @@ high-level semantic information about your content.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getRankedConcepts</span><span class="p">(</span>
-        <span class="n">forURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+        <span class="n">fromContentAtURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
         <span class="nv">knowledgeGraph</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/ConceptResponse.html">ConceptResponse</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/ConceptResponse.html">ConceptResponse</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -453,9 +527,9 @@ high-level semantic information about your content.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage17getRankedConceptsFT7forHtmlCSo5NSURL3urlGSqSS_14knowledgeGraphGSqOS_10QueryParam_7failureGSqFCSo7NSErrorT__7successFVS_15ConceptResponseT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getRankedConcepts(forHtml:url:knowledgeGraph:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage17getRankedConceptsFT7forHtmlCSo5NSURL3urlGSqSS_14knowledgeGraphGSqOS_10QueryParam_7failureGSqFCSo7NSErrorT__7successFVS_15ConceptResponseT__T_">getRankedConcepts(forHtml:url:knowledgeGraph:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage17getRankedConceptsFT12fromHTMLFileV10Foundation3URL7withURLGSqSS_14knowledgeGraphGSqOS_10QueryParam_7failureGSqFPs5Error_T__7successFVS_15ConceptResponseT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getRankedConcepts(fromHTMLFile:withURL:knowledgeGraph:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage17getRankedConceptsFT12fromHTMLFileV10Foundation3URL7withURLGSqSS_14knowledgeGraphGSqOS_10QueryParam_7failureGSqFPs5Error_T__7successFVS_15ConceptResponseT__T_">getRankedConcepts(fromHTMLFile:withURL:knowledgeGraph:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -471,11 +545,11 @@ high-level semantic information about your content.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getRankedConcepts</span><span class="p">(</span>
-        <span class="n">forHtml</span> <span class="nv">html</span><span class="p">:</span> <span class="kt">NSURL</span><span class="p">,</span>
-        <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="n">fromHTMLFile</span> <span class="nv">html</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span>
+        <span class="n">withURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
         <span class="nv">knowledgeGraph</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/ConceptResponse.html">ConceptResponse</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/ConceptResponse.html">ConceptResponse</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -557,9 +631,9 @@ high-level semantic information about your content.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage17getRankedConceptsFT7forTextCSo5NSURL14knowledgeGraphGSqOS_10QueryParam_7failureGSqFCSo7NSErrorT__7successFVS_15ConceptResponseT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getRankedConcepts(forText:knowledgeGraph:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage17getRankedConceptsFT7forTextCSo5NSURL14knowledgeGraphGSqOS_10QueryParam_7failureGSqFCSo7NSErrorT__7successFVS_15ConceptResponseT__T_">getRankedConcepts(forText:knowledgeGraph:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage17getRankedConceptsFT12fromTextFileV10Foundation3URL14knowledgeGraphGSqOS_10QueryParam_7failureGSqFPs5Error_T__7successFVS_15ConceptResponseT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getRankedConcepts(fromTextFile:knowledgeGraph:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage17getRankedConceptsFT12fromTextFileV10Foundation3URL14knowledgeGraphGSqOS_10QueryParam_7failureGSqFPs5Error_T__7successFVS_15ConceptResponseT__T_">getRankedConcepts(fromTextFile:knowledgeGraph:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -575,10 +649,10 @@ high-level semantic information about your content.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getRankedConcepts</span><span class="p">(</span>
-        <span class="n">forText</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">NSURL</span><span class="p">,</span>
+        <span class="n">fromTextFile</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span>
         <span class="nv">knowledgeGraph</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/ConceptResponse.html">ConceptResponse</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/ConceptResponse.html">ConceptResponse</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -647,9 +721,9 @@ high-level semantic information about your content.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage22getRankedNamedEntitiesFT6forURLSS14knowledgeGraphGSqOS_10QueryParam_20disambiguateEntitiesGSqS1__10linkedDataGSqS1__11coreferenceGSqS1__9sentimentGSqS1__10quotationsGSqS1__18structuredEntitiesGSqS1__7failureGSqFCSo7NSErrorT__7successFVS_8EntitiesT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getRankedNamedEntities(forURL:knowledgeGraph:disambiguateEntities:linkedData:coreference:sentiment:quotations:structuredEntities:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage22getRankedNamedEntitiesFT6forURLSS14knowledgeGraphGSqOS_10QueryParam_20disambiguateEntitiesGSqS1__10linkedDataGSqS1__11coreferenceGSqS1__9sentimentGSqS1__10quotationsGSqS1__18structuredEntitiesGSqS1__7failureGSqFCSo7NSErrorT__7successFVS_8EntitiesT__T_">getRankedNamedEntities(forURL:knowledgeGraph:disambiguateEntities:linkedData:coreference:sentiment:quotations:structuredEntities:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage22getRankedNamedEntitiesFT16fromContentAtURLSS14knowledgeGraphGSqOS_10QueryParam_20disambiguateEntitiesGSqS1__10linkedDataGSqS1__11coreferenceGSqS1__9sentimentGSqS1__10quotationsGSqS1__18structuredEntitiesGSqS1__7failureGSqFPs5Error_T__7successFVS_8EntitiesT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getRankedNamedEntities(fromContentAtURL:knowledgeGraph:disambiguateEntities:linkedData:coreference:sentiment:quotations:structuredEntities:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage22getRankedNamedEntitiesFT16fromContentAtURLSS14knowledgeGraphGSqOS_10QueryParam_20disambiguateEntitiesGSqS1__10linkedDataGSqS1__11coreferenceGSqS1__9sentimentGSqS1__10quotationsGSqS1__18structuredEntitiesGSqS1__7failureGSqFPs5Error_T__7successFVS_8EntitiesT__T_">getRankedNamedEntities(fromContentAtURL:knowledgeGraph:disambiguateEntities:linkedData:coreference:sentiment:quotations:structuredEntities:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -665,7 +739,7 @@ high-level semantic information about your content.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getRankedNamedEntities</span><span class="p">(</span>
-        <span class="n">forURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+        <span class="n">fromContentAtURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
         <span class="nv">knowledgeGraph</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
         <span class="nv">disambiguateEntities</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
         <span class="nv">linkedData</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
@@ -673,8 +747,8 @@ high-level semantic information about your content.</p>
         <span class="nv">sentiment</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
         <span class="nv">quotations</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
         <span class="nv">structuredEntities</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/Entities.html">Entities</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Entities.html">Entities</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -821,9 +895,9 @@ high-level semantic information about your content.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage22getRankedNamedEntitiesFT7forHtmlCSo5NSURL3urlGSqSS_14knowledgeGraphGSqOS_10QueryParam_20disambiguateEntitiesGSqS2__10linkedDataGSqS2__11coreferenceGSqS2__9sentimentGSqS2__10quotationsGSqS2__18structuredEntitiesGSqS2__7failureGSqFCSo7NSErrorT__7successFVS_8EntitiesT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getRankedNamedEntities(forHtml:url:knowledgeGraph:disambiguateEntities:linkedData:coreference:sentiment:quotations:structuredEntities:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage22getRankedNamedEntitiesFT7forHtmlCSo5NSURL3urlGSqSS_14knowledgeGraphGSqOS_10QueryParam_20disambiguateEntitiesGSqS2__10linkedDataGSqS2__11coreferenceGSqS2__9sentimentGSqS2__10quotationsGSqS2__18structuredEntitiesGSqS2__7failureGSqFCSo7NSErrorT__7successFVS_8EntitiesT__T_">getRankedNamedEntities(forHtml:url:knowledgeGraph:disambiguateEntities:linkedData:coreference:sentiment:quotations:structuredEntities:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage22getRankedNamedEntitiesFT12fromHTMLFileV10Foundation3URL7withURLGSqSS_14knowledgeGraphGSqOS_10QueryParam_20disambiguateEntitiesGSqS3__10linkedDataGSqS3__11coreferenceGSqS3__9sentimentGSqS3__10quotationsGSqS3__18structuredEntitiesGSqS3__7failureGSqFPs5Error_T__7successFVS_8EntitiesT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getRankedNamedEntities(fromHTMLFile:withURL:knowledgeGraph:disambiguateEntities:linkedData:coreference:sentiment:quotations:structuredEntities:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage22getRankedNamedEntitiesFT12fromHTMLFileV10Foundation3URL7withURLGSqSS_14knowledgeGraphGSqOS_10QueryParam_20disambiguateEntitiesGSqS3__10linkedDataGSqS3__11coreferenceGSqS3__9sentimentGSqS3__10quotationsGSqS3__18structuredEntitiesGSqS3__7failureGSqFPs5Error_T__7successFVS_8EntitiesT__T_">getRankedNamedEntities(fromHTMLFile:withURL:knowledgeGraph:disambiguateEntities:linkedData:coreference:sentiment:quotations:structuredEntities:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -839,8 +913,8 @@ high-level semantic information about your content.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getRankedNamedEntities</span><span class="p">(</span>
-        <span class="n">forHtml</span> <span class="nv">html</span><span class="p">:</span> <span class="kt">NSURL</span><span class="p">,</span>
-        <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+        <span class="n">fromHTMLFile</span> <span class="nv">html</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span>
+        <span class="n">withURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
         <span class="nv">knowledgeGraph</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
         <span class="nv">disambiguateEntities</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
         <span class="nv">linkedData</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
@@ -848,8 +922,8 @@ high-level semantic information about your content.</p>
         <span class="nv">sentiment</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
         <span class="nv">quotations</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
         <span class="nv">structuredEntities</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/Entities.html">Entities</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Entities.html">Entities</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1009,9 +1083,9 @@ high-level semantic information about your content.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage22getRankedNamedEntitiesFT7forTextCSo5NSURL14knowledgeGraphGSqOS_10QueryParam_20disambiguateEntitiesGSqS2__10linkedDataGSqS2__11coreferenceGSqS2__9sentimentGSqS2__10quotationsGSqS2__18structuredEntitiesGSqS2__7failureGSqFCSo7NSErrorT__7successFVS_8EntitiesT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getRankedNamedEntities(forText:knowledgeGraph:disambiguateEntities:linkedData:coreference:sentiment:quotations:structuredEntities:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage22getRankedNamedEntitiesFT7forTextCSo5NSURL14knowledgeGraphGSqOS_10QueryParam_20disambiguateEntitiesGSqS2__10linkedDataGSqS2__11coreferenceGSqS2__9sentimentGSqS2__10quotationsGSqS2__18structuredEntitiesGSqS2__7failureGSqFCSo7NSErrorT__7successFVS_8EntitiesT__T_">getRankedNamedEntities(forText:knowledgeGraph:disambiguateEntities:linkedData:coreference:sentiment:quotations:structuredEntities:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage22getRankedNamedEntitiesFT12fromTextFileV10Foundation3URL14knowledgeGraphGSqOS_10QueryParam_20disambiguateEntitiesGSqS3__10linkedDataGSqS3__11coreferenceGSqS3__9sentimentGSqS3__10quotationsGSqS3__18structuredEntitiesGSqS3__7failureGSqFPs5Error_T__7successFVS_8EntitiesT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getRankedNamedEntities(fromTextFile:knowledgeGraph:disambiguateEntities:linkedData:coreference:sentiment:quotations:structuredEntities:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage22getRankedNamedEntitiesFT12fromTextFileV10Foundation3URL14knowledgeGraphGSqOS_10QueryParam_20disambiguateEntitiesGSqS3__10linkedDataGSqS3__11coreferenceGSqS3__9sentimentGSqS3__10quotationsGSqS3__18structuredEntitiesGSqS3__7failureGSqFPs5Error_T__7successFVS_8EntitiesT__T_">getRankedNamedEntities(fromTextFile:knowledgeGraph:disambiguateEntities:linkedData:coreference:sentiment:quotations:structuredEntities:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1027,7 +1101,7 @@ high-level semantic information about your content.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getRankedNamedEntities</span><span class="p">(</span>
-        <span class="n">forText</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">NSURL</span><span class="p">,</span>
+        <span class="n">fromTextFile</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span>
         <span class="nv">knowledgeGraph</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
         <span class="nv">disambiguateEntities</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
         <span class="nv">linkedData</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
@@ -1035,8 +1109,8 @@ high-level semantic information about your content.</p>
         <span class="nv">sentiment</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
         <span class="nv">quotations</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
         <span class="nv">structuredEntities</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/Entities.html">Entities</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Entities.html">Entities</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1183,9 +1257,9 @@ high-level semantic information about your content.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage17getRankedKeywordsFT6forURLSS14knowledgeGraphGSqOS_10QueryParam_9sentimentGSqS1__10strictModeGSqSb_7failureGSqFCSo7NSErrorT__7successFVS_8KeywordsT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getRankedKeywords(forURL:knowledgeGraph:sentiment:strictMode:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage17getRankedKeywordsFT6forURLSS14knowledgeGraphGSqOS_10QueryParam_9sentimentGSqS1__10strictModeGSqSb_7failureGSqFCSo7NSErrorT__7successFVS_8KeywordsT__T_">getRankedKeywords(forURL:knowledgeGraph:sentiment:strictMode:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage17getRankedKeywordsFT16fromContentAtURLSS14knowledgeGraphGSqOS_10QueryParam_9sentimentGSqS1__10strictModeGSqSb_7failureGSqFPs5Error_T__7successFVS_8KeywordsT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getRankedKeywords(fromContentAtURL:knowledgeGraph:sentiment:strictMode:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage17getRankedKeywordsFT16fromContentAtURLSS14knowledgeGraphGSqOS_10QueryParam_9sentimentGSqS1__10strictModeGSqSb_7failureGSqFPs5Error_T__7successFVS_8KeywordsT__T_">getRankedKeywords(fromContentAtURL:knowledgeGraph:sentiment:strictMode:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1201,12 +1275,12 @@ high-level semantic information about your content.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getRankedKeywords</span><span class="p">(</span>
-        <span class="n">forURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+        <span class="n">fromContentAtURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
         <span class="nv">knowledgeGraph</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
         <span class="nv">sentiment</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
         <span class="nv">strictMode</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/Keywords.html">Keywords</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Keywords.html">Keywords</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1301,9 +1375,9 @@ high-level semantic information about your content.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage17getRankedKeywordsFT7forHtmlCSo5NSURL3urlGSqSS_14knowledgeGraphGSqOS_10QueryParam_9sentimentGSqS2__10strictModeGSqSb_7failureGSqFCSo7NSErrorT__7successFVS_8KeywordsT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getRankedKeywords(forHtml:url:knowledgeGraph:sentiment:strictMode:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage17getRankedKeywordsFT7forHtmlCSo5NSURL3urlGSqSS_14knowledgeGraphGSqOS_10QueryParam_9sentimentGSqS2__10strictModeGSqSb_7failureGSqFCSo7NSErrorT__7successFVS_8KeywordsT__T_">getRankedKeywords(forHtml:url:knowledgeGraph:sentiment:strictMode:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage17getRankedKeywordsFT12fromHTMLFileV10Foundation3URL7withURLGSqSS_14knowledgeGraphGSqOS_10QueryParam_9sentimentGSqS3__10strictModeGSqSb_7failureGSqFPs5Error_T__7successFVS_8KeywordsT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getRankedKeywords(fromHTMLFile:withURL:knowledgeGraph:sentiment:strictMode:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage17getRankedKeywordsFT12fromHTMLFileV10Foundation3URL7withURLGSqSS_14knowledgeGraphGSqOS_10QueryParam_9sentimentGSqS3__10strictModeGSqSb_7failureGSqFPs5Error_T__7successFVS_8KeywordsT__T_">getRankedKeywords(fromHTMLFile:withURL:knowledgeGraph:sentiment:strictMode:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1319,13 +1393,13 @@ high-level semantic information about your content.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getRankedKeywords</span><span class="p">(</span>
-        <span class="n">forHtml</span> <span class="nv">html</span><span class="p">:</span> <span class="kt">NSURL</span><span class="p">,</span>
-        <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="n">fromHTMLFile</span> <span class="nv">html</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span>
+        <span class="n">withURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
         <span class="nv">knowledgeGraph</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
         <span class="nv">sentiment</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
         <span class="nv">strictMode</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/Keywords.html">Keywords</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Keywords.html">Keywords</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1433,9 +1507,9 @@ high-level semantic information about your content.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage17getRankedKeywordsFT7forTextCSo5NSURL14knowledgeGraphGSqOS_10QueryParam_9sentimentGSqS2__10strictModeGSqSb_7failureGSqFCSo7NSErrorT__7successFVS_8KeywordsT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getRankedKeywords(forText:knowledgeGraph:sentiment:strictMode:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage17getRankedKeywordsFT7forTextCSo5NSURL14knowledgeGraphGSqOS_10QueryParam_9sentimentGSqS2__10strictModeGSqSb_7failureGSqFCSo7NSErrorT__7successFVS_8KeywordsT__T_">getRankedKeywords(forText:knowledgeGraph:sentiment:strictMode:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage17getRankedKeywordsFT12fromTextFileV10Foundation3URL14knowledgeGraphGSqOS_10QueryParam_9sentimentGSqS3__10strictModeGSqSb_7failureGSqFPs5Error_T__7successFVS_8KeywordsT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getRankedKeywords(fromTextFile:knowledgeGraph:sentiment:strictMode:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage17getRankedKeywordsFT12fromTextFileV10Foundation3URL14knowledgeGraphGSqOS_10QueryParam_9sentimentGSqS3__10strictModeGSqSb_7failureGSqFPs5Error_T__7successFVS_8KeywordsT__T_">getRankedKeywords(fromTextFile:knowledgeGraph:sentiment:strictMode:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1451,12 +1525,12 @@ high-level semantic information about your content.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getRankedKeywords</span><span class="p">(</span>
-        <span class="n">forText</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">NSURL</span><span class="p">,</span>
+        <span class="n">fromTextFile</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span>
         <span class="nv">knowledgeGraph</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
         <span class="nv">sentiment</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
         <span class="nv">strictMode</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/Keywords.html">Keywords</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Keywords.html">Keywords</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1551,9 +1625,9 @@ high-level semantic information about your content.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage11getLanguageFT6forURLSS7failureGSqFCSo7NSErrorT__7successFVS_8LanguageT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getLanguage(forURL:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage11getLanguageFT6forURLSS7failureGSqFCSo7NSErrorT__7successFVS_8LanguageT__T_">getLanguage(forURL:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage11getLanguageFT16fromContentAtURLSS7failureGSqFPs5Error_T__7successFVS_8LanguageT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getLanguage(fromContentAtURL:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage11getLanguageFT16fromContentAtURLSS7failureGSqFPs5Error_T__7successFVS_8LanguageT__T_">getLanguage(fromContentAtURL:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1569,9 +1643,9 @@ high-level semantic information about your content.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getLanguage</span><span class="p">(</span>
-        <span class="n">forURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/Language.html">Language</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="n">fromContentAtURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Language.html">Language</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1627,9 +1701,9 @@ high-level semantic information about your content.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage11getLanguageFT7forTextCSo5NSURL7failureGSqFCSo7NSErrorT__7successFVS_8LanguageT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getLanguage(forText:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage11getLanguageFT7forTextCSo5NSURL7failureGSqFCSo7NSErrorT__7successFVS_8LanguageT__T_">getLanguage(forText:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage11getLanguageFT12fromTextFileV10Foundation3URL7failureGSqFPs5Error_T__7successFVS_8LanguageT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getLanguage(fromTextFile:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage11getLanguageFT12fromTextFileV10Foundation3URL7failureGSqFPs5Error_T__7successFVS_8LanguageT__T_">getLanguage(fromTextFile:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1645,9 +1719,9 @@ high-level semantic information about your content.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getLanguage</span><span class="p">(</span>
-        <span class="n">forText</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">NSURL</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/Language.html">Language</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="n">fromTextFile</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Language.html">Language</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1703,9 +1777,9 @@ high-level semantic information about your content.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage18getMicroformatDataFT6forURLSS7failureGSqFCSo7NSErrorT__7successFVS_12MicroformatsT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getMicroformatData(forURL:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage18getMicroformatDataFT6forURLSS7failureGSqFCSo7NSErrorT__7successFVS_12MicroformatsT__T_">getMicroformatData(forURL:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage18getMicroformatDataFT16fromContentAtURLSS7failureGSqFPs5Error_T__7successFVS_12MicroformatsT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getMicroformatData(fromContentAtURL:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage18getMicroformatDataFT16fromContentAtURLSS7failureGSqFPs5Error_T__7successFVS_12MicroformatsT__T_">getMicroformatData(fromContentAtURL:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1721,9 +1795,9 @@ high-level semantic information about your content.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getMicroformatData</span><span class="p">(</span>
-        <span class="n">forURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/Microformats.html">Microformats</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="n">fromContentAtURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Microformats.html">Microformats</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1779,9 +1853,9 @@ high-level semantic information about your content.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage18getMicroformatDataFT7forHtmlCSo5NSURL3urlGSqSS_7failureGSqFCSo7NSErrorT__7successFVS_12MicroformatsT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getMicroformatData(forHtml:url:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage18getMicroformatDataFT7forHtmlCSo5NSURL3urlGSqSS_7failureGSqFCSo7NSErrorT__7successFVS_12MicroformatsT__T_">getMicroformatData(forHtml:url:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage18getMicroformatDataFT12fromHTMLFileV10Foundation3URL7withURLGSqSS_7failureGSqFPs5Error_T__7successFVS_12MicroformatsT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getMicroformatData(fromHTMLFile:withURL:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage18getMicroformatDataFT12fromHTMLFileV10Foundation3URL7withURLGSqSS_7failureGSqFPs5Error_T__7successFVS_12MicroformatsT__T_">getMicroformatData(fromHTMLFile:withURL:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1798,10 +1872,10 @@ The fact URL is required here is a bug.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getMicroformatData</span><span class="p">(</span>
-        <span class="n">forHtml</span> <span class="nv">html</span><span class="p">:</span> <span class="kt">NSURL</span><span class="p">,</span>
-        <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="s">" "</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/Microformats.html">Microformats</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="n">fromHTMLFile</span> <span class="nv">html</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span>
+        <span class="n">withURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="s">" "</span><span class="p">,</span>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Microformats.html">Microformats</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1870,9 +1944,9 @@ The fact URL is required here is a bug.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage10getPubDateFT6forURLSS7failureGSqFCSo7NSErrorT__7successFVS_19PublicationResponseT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getPubDate(forURL:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage10getPubDateFT6forURLSS7failureGSqFCSo7NSErrorT__7successFVS_19PublicationResponseT__T_">getPubDate(forURL:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage10getPubDateFT16fromContentAtURLSS7failureGSqFPs5Error_T__7successFVS_19PublicationResponseT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getPubDate(fromContentAtURL:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage10getPubDateFT16fromContentAtURLSS7failureGSqFPs5Error_T__7successFVS_19PublicationResponseT__T_">getPubDate(fromContentAtURL:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1888,9 +1962,9 @@ The fact URL is required here is a bug.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getPubDate</span><span class="p">(</span>
-        <span class="n">forURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/PublicationResponse.html">PublicationResponse</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="n">fromContentAtURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/PublicationResponse.html">PublicationResponse</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1946,9 +2020,9 @@ The fact URL is required here is a bug.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage10getPubDateFT7forHtmlCSo5NSURL3urlGSqSS_7failureGSqFCSo7NSErrorT__7successFVS_19PublicationResponseT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getPubDate(forHtml:url:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage10getPubDateFT7forHtmlCSo5NSURL3urlGSqSS_7failureGSqFCSo7NSErrorT__7successFVS_19PublicationResponseT__T_">getPubDate(forHtml:url:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage10getPubDateFT12fromHTMLFileV10Foundation3URL7withURLGSqSS_7failureGSqFPs5Error_T__7successFVS_19PublicationResponseT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getPubDate(fromHTMLFile:withURL:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage10getPubDateFT12fromHTMLFileV10Foundation3URL7withURLGSqSS_7failureGSqFPs5Error_T__7successFVS_19PublicationResponseT__T_">getPubDate(fromHTMLFile:withURL:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1964,10 +2038,10 @@ The fact URL is required here is a bug.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getPubDate</span><span class="p">(</span>
-        <span class="n">forHtml</span> <span class="nv">html</span><span class="p">:</span> <span class="kt">NSURL</span><span class="p">,</span>
-        <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/PublicationResponse.html">PublicationResponse</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="n">fromHTMLFile</span> <span class="nv">html</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span>
+        <span class="n">withURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/PublicationResponse.html">PublicationResponse</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -2036,9 +2110,9 @@ The fact URL is required here is a bug.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage12getRelationsFT6forURLSS14knowledgeGraphGSqOS_10QueryParam_20disambiguateEntitiesGSqS1__10linkedDataGSqS1__11coreferenceGSqS1__9sentimentGSqS1__8keywordsGSqS1__8entitiesGSqS1__15requireEntitiesGSqS1__24sentimentExcludeEntitiesGSqS1__7failureGSqFCSo7NSErrorT__7successFVS_12SAORelationsT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getRelations(forURL:knowledgeGraph:disambiguateEntities:linkedData:coreference:sentiment:keywords:entities:requireEntities:sentimentExcludeEntities:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage12getRelationsFT6forURLSS14knowledgeGraphGSqOS_10QueryParam_20disambiguateEntitiesGSqS1__10linkedDataGSqS1__11coreferenceGSqS1__9sentimentGSqS1__8keywordsGSqS1__8entitiesGSqS1__15requireEntitiesGSqS1__24sentimentExcludeEntitiesGSqS1__7failureGSqFCSo7NSErrorT__7successFVS_12SAORelationsT__T_">getRelations(forURL:knowledgeGraph:disambiguateEntities:linkedData:coreference:sentiment:keywords:entities:requireEntities:sentimentExcludeEntities:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage12getRelationsFT16fromContentAtURLSS14knowledgeGraphGSqOS_10QueryParam_20disambiguateEntitiesGSqS1__10linkedDataGSqS1__11coreferenceGSqS1__9sentimentGSqS1__8keywordsGSqS1__8entitiesGSqS1__15requireEntitiesGSqS1__24sentimentExcludeEntitiesGSqS1__7failureGSqFPs5Error_T__7successFVS_12SAORelationsT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getRelations(fromContentAtURL:knowledgeGraph:disambiguateEntities:linkedData:coreference:sentiment:keywords:entities:requireEntities:sentimentExcludeEntities:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage12getRelationsFT16fromContentAtURLSS14knowledgeGraphGSqOS_10QueryParam_20disambiguateEntitiesGSqS1__10linkedDataGSqS1__11coreferenceGSqS1__9sentimentGSqS1__8keywordsGSqS1__8entitiesGSqS1__15requireEntitiesGSqS1__24sentimentExcludeEntitiesGSqS1__7failureGSqFPs5Error_T__7successFVS_12SAORelationsT__T_">getRelations(fromContentAtURL:knowledgeGraph:disambiguateEntities:linkedData:coreference:sentiment:keywords:entities:requireEntities:sentimentExcludeEntities:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2054,7 +2128,7 @@ The fact URL is required here is a bug.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getRelations</span><span class="p">(</span>
-        <span class="n">forURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+        <span class="n">fromContentAtURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
         <span class="nv">knowledgeGraph</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
         <span class="nv">disambiguateEntities</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
         <span class="nv">linkedData</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
@@ -2064,8 +2138,8 @@ The fact URL is required here is a bug.</p>
         <span class="nv">entities</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
         <span class="nv">requireEntities</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
         <span class="nv">sentimentExcludeEntities</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/SAORelations.html">SAORelations</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/SAORelations.html">SAORelations</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -2082,6 +2156,19 @@ The fact URL is required here is a bug.</p>
                               <td>
                                 <div>
                                   <p>the URL of the content</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>knowledgeGraph</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>whether to include a knowledgeGraph calculation</p>
 
                                 </div>
                               </td>
@@ -2225,9 +2312,9 @@ The fact URL is required here is a bug.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage12getRelationsFT7forHtmlCSo5NSURL3urlGSqSS_14knowledgeGraphGSqOS_10QueryParam_20disambiguateEntitiesGSqS2__10linkedDataGSqS2__11coreferenceGSqS2__9sentimentGSqS2__8keywordsGSqS2__8entitiesGSqS2__15requireEntitiesGSqS2__24sentimentExcludeEntitiesGSqS2__7failureGSqFCSo7NSErrorT__7successFVS_12SAORelationsT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getRelations(forHtml:url:knowledgeGraph:disambiguateEntities:linkedData:coreference:sentiment:keywords:entities:requireEntities:sentimentExcludeEntities:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage12getRelationsFT7forHtmlCSo5NSURL3urlGSqSS_14knowledgeGraphGSqOS_10QueryParam_20disambiguateEntitiesGSqS2__10linkedDataGSqS2__11coreferenceGSqS2__9sentimentGSqS2__8keywordsGSqS2__8entitiesGSqS2__15requireEntitiesGSqS2__24sentimentExcludeEntitiesGSqS2__7failureGSqFCSo7NSErrorT__7successFVS_12SAORelationsT__T_">getRelations(forHtml:url:knowledgeGraph:disambiguateEntities:linkedData:coreference:sentiment:keywords:entities:requireEntities:sentimentExcludeEntities:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage12getRelationsFT12fromHTMLFileV10Foundation3URL7withURLGSqSS_14knowledgeGraphGSqOS_10QueryParam_20disambiguateEntitiesGSqS3__10linkedDataGSqS3__11coreferenceGSqS3__9sentimentGSqS3__8keywordsGSqS3__8entitiesGSqS3__15requireEntitiesGSqS3__24sentimentExcludeEntitiesGSqS3__7failureGSqFPs5Error_T__7successFVS_12SAORelationsT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getRelations(fromHTMLFile:withURL:knowledgeGraph:disambiguateEntities:linkedData:coreference:sentiment:keywords:entities:requireEntities:sentimentExcludeEntities:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage12getRelationsFT12fromHTMLFileV10Foundation3URL7withURLGSqSS_14knowledgeGraphGSqOS_10QueryParam_20disambiguateEntitiesGSqS3__10linkedDataGSqS3__11coreferenceGSqS3__9sentimentGSqS3__8keywordsGSqS3__8entitiesGSqS3__15requireEntitiesGSqS3__24sentimentExcludeEntitiesGSqS3__7failureGSqFPs5Error_T__7successFVS_12SAORelationsT__T_">getRelations(fromHTMLFile:withURL:knowledgeGraph:disambiguateEntities:linkedData:coreference:sentiment:keywords:entities:requireEntities:sentimentExcludeEntities:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2243,8 +2330,8 @@ The fact URL is required here is a bug.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getRelations</span><span class="p">(</span>
-        <span class="n">forHtml</span> <span class="nv">html</span><span class="p">:</span> <span class="kt">NSURL</span><span class="p">,</span>
-        <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="n">fromHTMLFile</span> <span class="nv">html</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span>
+        <span class="n">withURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
         <span class="nv">knowledgeGraph</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
         <span class="nv">disambiguateEntities</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
         <span class="nv">linkedData</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
@@ -2254,8 +2341,8 @@ The fact URL is required here is a bug.</p>
         <span class="nv">entities</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
         <span class="nv">requireEntities</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
         <span class="nv">sentimentExcludeEntities</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/SAORelations.html">SAORelations</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/SAORelations.html">SAORelations</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -2285,6 +2372,19 @@ The fact URL is required here is a bug.</p>
                               <td>
                                 <div>
                                   <p>a reference to where the HTML is located</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>knowledgeGraph</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>whether to include a knowledgeGraph calculation</p>
 
                                 </div>
                               </td>
@@ -2428,9 +2528,9 @@ The fact URL is required here is a bug.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage12getRelationsFT7forTextCSo5NSURL14knowledgeGraphGSqOS_10QueryParam_20disambiguateEntitiesGSqS2__10linkedDataGSqS2__11coreferenceGSqS2__9sentimentGSqS2__8keywordsGSqS2__8entitiesGSqS2__15requireEntitiesGSqS2__24sentimentExcludeEntitiesGSqS2__7failureGSqFCSo7NSErrorT__7successFVS_12SAORelationsT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getRelations(forText:knowledgeGraph:disambiguateEntities:linkedData:coreference:sentiment:keywords:entities:requireEntities:sentimentExcludeEntities:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage12getRelationsFT7forTextCSo5NSURL14knowledgeGraphGSqOS_10QueryParam_20disambiguateEntitiesGSqS2__10linkedDataGSqS2__11coreferenceGSqS2__9sentimentGSqS2__8keywordsGSqS2__8entitiesGSqS2__15requireEntitiesGSqS2__24sentimentExcludeEntitiesGSqS2__7failureGSqFCSo7NSErrorT__7successFVS_12SAORelationsT__T_">getRelations(forText:knowledgeGraph:disambiguateEntities:linkedData:coreference:sentiment:keywords:entities:requireEntities:sentimentExcludeEntities:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage12getRelationsFT12fromTextFileV10Foundation3URL14knowledgeGraphGSqOS_10QueryParam_20disambiguateEntitiesGSqS3__10linkedDataGSqS3__11coreferenceGSqS3__9sentimentGSqS3__8keywordsGSqS3__8entitiesGSqS3__15requireEntitiesGSqS3__24sentimentExcludeEntitiesGSqS3__7failureGSqFPs5Error_T__7successFVS_12SAORelationsT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getRelations(fromTextFile:knowledgeGraph:disambiguateEntities:linkedData:coreference:sentiment:keywords:entities:requireEntities:sentimentExcludeEntities:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage12getRelationsFT12fromTextFileV10Foundation3URL14knowledgeGraphGSqOS_10QueryParam_20disambiguateEntitiesGSqS3__10linkedDataGSqS3__11coreferenceGSqS3__9sentimentGSqS3__8keywordsGSqS3__8entitiesGSqS3__15requireEntitiesGSqS3__24sentimentExcludeEntitiesGSqS3__7failureGSqFPs5Error_T__7successFVS_12SAORelationsT__T_">getRelations(fromTextFile:knowledgeGraph:disambiguateEntities:linkedData:coreference:sentiment:keywords:entities:requireEntities:sentimentExcludeEntities:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2446,7 +2546,7 @@ The fact URL is required here is a bug.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getRelations</span><span class="p">(</span>
-        <span class="n">forText</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">NSURL</span><span class="p">,</span>
+        <span class="n">fromTextFile</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span>
         <span class="nv">knowledgeGraph</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
         <span class="nv">disambiguateEntities</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
         <span class="nv">linkedData</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
@@ -2456,8 +2556,8 @@ The fact URL is required here is a bug.</p>
         <span class="nv">entities</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
         <span class="nv">requireEntities</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
         <span class="nv">sentimentExcludeEntities</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/SAORelations.html">SAORelations</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/SAORelations.html">SAORelations</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -2474,6 +2574,19 @@ The fact URL is required here is a bug.</p>
                               <td>
                                 <div>
                                   <p>a Text document</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>knowledgeGraph</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>whether to include a knowledgeGraph calculation</p>
 
                                 </div>
                               </td>
@@ -2617,9 +2730,9 @@ The fact URL is required here is a bug.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage16getTextSentimentFT6forURLSS7failureGSqFCSo7NSErrorT__7successFVS_17SentimentResponseT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getTextSentiment(forURL:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage16getTextSentimentFT6forURLSS7failureGSqFCSo7NSErrorT__7successFVS_17SentimentResponseT__T_">getTextSentiment(forURL:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage16getTextSentimentFT16fromContentAtURLSS7failureGSqFPs5Error_T__7successFVS_17SentimentResponseT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getTextSentiment(fromContentAtURL:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage16getTextSentimentFT16fromContentAtURLSS7failureGSqFPs5Error_T__7successFVS_17SentimentResponseT__T_">getTextSentiment(fromContentAtURL:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2635,9 +2748,9 @@ The fact URL is required here is a bug.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getTextSentiment</span><span class="p">(</span>
-        <span class="n">forURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/SentimentResponse.html">SentimentResponse</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="n">fromContentAtURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/SentimentResponse.html">SentimentResponse</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -2693,9 +2806,9 @@ The fact URL is required here is a bug.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage16getTextSentimentFT7forHtmlCSo5NSURL3urlGSqSS_7failureGSqFCSo7NSErrorT__7successFVS_17SentimentResponseT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getTextSentiment(forHtml:url:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage16getTextSentimentFT7forHtmlCSo5NSURL3urlGSqSS_7failureGSqFCSo7NSErrorT__7successFVS_17SentimentResponseT__T_">getTextSentiment(forHtml:url:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage16getTextSentimentFT12fromHTMLFileV10Foundation3URL7withURLGSqSS_7failureGSqFPs5Error_T__7successFVS_17SentimentResponseT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getTextSentiment(fromHTMLFile:withURL:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage16getTextSentimentFT12fromHTMLFileV10Foundation3URL7withURLGSqSS_7failureGSqFPs5Error_T__7successFVS_17SentimentResponseT__T_">getTextSentiment(fromHTMLFile:withURL:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2711,10 +2824,10 @@ The fact URL is required here is a bug.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getTextSentiment</span><span class="p">(</span>
-        <span class="n">forHtml</span> <span class="nv">html</span><span class="p">:</span> <span class="kt">NSURL</span><span class="p">,</span>
-        <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/SentimentResponse.html">SentimentResponse</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="n">fromHTMLFile</span> <span class="nv">html</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span>
+        <span class="n">withURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/SentimentResponse.html">SentimentResponse</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -2783,9 +2896,9 @@ The fact URL is required here is a bug.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage16getTextSentimentFT7forTextCSo5NSURL7failureGSqFCSo7NSErrorT__7successFVS_17SentimentResponseT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getTextSentiment(forText:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage16getTextSentimentFT7forTextCSo5NSURL7failureGSqFCSo7NSErrorT__7successFVS_17SentimentResponseT__T_">getTextSentiment(forText:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage16getTextSentimentFT12fromTextFileV10Foundation3URL7failureGSqFPs5Error_T__7successFVS_17SentimentResponseT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getTextSentiment(fromTextFile:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage16getTextSentimentFT12fromTextFileV10Foundation3URL7failureGSqFPs5Error_T__7successFVS_17SentimentResponseT__T_">getTextSentiment(fromTextFile:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2801,9 +2914,9 @@ The fact URL is required here is a bug.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getTextSentiment</span><span class="p">(</span>
-        <span class="n">forText</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">NSURL</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/SentimentResponse.html">SentimentResponse</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="n">fromTextFile</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/SentimentResponse.html">SentimentResponse</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -2859,9 +2972,9 @@ The fact URL is required here is a bug.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage20getTargetedSentimentFT6forURLSS6targetSS7failureGSqFCSo7NSErrorT__7successFVS_17SentimentResponseT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getTargetedSentiment(forURL:target:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage20getTargetedSentimentFT6forURLSS6targetSS7failureGSqFCSo7NSErrorT__7successFVS_17SentimentResponseT__T_">getTargetedSentiment(forURL:target:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage20getTargetedSentimentFT16fromContentAtURLSS11withTargetsSS7failureGSqFPs5Error_T__7successFVS_17SentimentResponseT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getTargetedSentiment(fromContentAtURL:withTargets:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage20getTargetedSentimentFT16fromContentAtURLSS11withTargetsSS7failureGSqFPs5Error_T__7successFVS_17SentimentResponseT__T_">getTargetedSentiment(fromContentAtURL:withTargets:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2877,10 +2990,10 @@ The fact URL is required here is a bug.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getTargetedSentiment</span><span class="p">(</span>
-        <span class="n">forURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
-        <span class="nv">target</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/SentimentResponse.html">SentimentResponse</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="n">fromContentAtURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+        <span class="n">withTargets</span> <span class="nv">targets</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/SentimentResponse.html">SentimentResponse</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -2891,12 +3004,12 @@ The fact URL is required here is a bug.</p>
                             <tr>
                               <td>
                                 <code>
-                                <em>target</em>
+                                <em>url</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>a pharse to target analysis towards</p>
+                                  <p>the URL of the content</p>
 
                                 </div>
                               </td>
@@ -2904,12 +3017,12 @@ The fact URL is required here is a bug.</p>
                             <tr>
                               <td>
                                 <code>
-                                <em>url</em>
+                                <em>targets</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>the URL of the content</p>
+                                  <p>a pipe delimited list of phrases to target analysis towards</p>
 
                                 </div>
                               </td>
@@ -2949,9 +3062,9 @@ The fact URL is required here is a bug.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage20getTargetedSentimentFT7forHtmlCSo5NSURL6targetSS3urlGSqSS_7failureGSqFCSo7NSErrorT__7successFVS_17SentimentResponseT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getTargetedSentiment(forHtml:target:url:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage20getTargetedSentimentFT7forHtmlCSo5NSURL6targetSS3urlGSqSS_7failureGSqFCSo7NSErrorT__7successFVS_17SentimentResponseT__T_">getTargetedSentiment(forHtml:target:url:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage20getTargetedSentimentFT12fromHTMLFileV10Foundation3URL11withTargetsSS3urlGSqSS_7failureGSqFPs5Error_T__7successFVS_17SentimentResponseT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getTargetedSentiment(fromHTMLFile:withTargets:url:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage20getTargetedSentimentFT12fromHTMLFileV10Foundation3URL11withTargetsSS3urlGSqSS_7failureGSqFPs5Error_T__7successFVS_17SentimentResponseT__T_">getTargetedSentiment(fromHTMLFile:withTargets:url:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2967,11 +3080,11 @@ The fact URL is required here is a bug.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getTargetedSentiment</span><span class="p">(</span>
-        <span class="n">forHtml</span> <span class="nv">html</span><span class="p">:</span> <span class="kt">NSURL</span><span class="p">,</span>
-        <span class="nv">target</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+        <span class="n">fromHTMLFile</span> <span class="nv">html</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span>
+        <span class="n">withTargets</span> <span class="nv">targets</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
         <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/SentimentResponse.html">SentimentResponse</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/SentimentResponse.html">SentimentResponse</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -2995,12 +3108,12 @@ The fact URL is required here is a bug.</p>
                             <tr>
                               <td>
                                 <code>
-                                <em>target</em>
+                                <em>targets</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>a pharse to target analysis towards</p>
+                                  <p>a pipe delimited list of phrases to target analysis towards</p>
 
                                 </div>
                               </td>
@@ -3053,9 +3166,9 @@ The fact URL is required here is a bug.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage20getTargetedSentimentFT7forTextCSo5NSURL6targetSS7failureGSqFCSo7NSErrorT__7successFVS_17SentimentResponseT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getTargetedSentiment(forText:target:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage20getTargetedSentimentFT7forTextCSo5NSURL6targetSS7failureGSqFCSo7NSErrorT__7successFVS_17SentimentResponseT__T_">getTargetedSentiment(forText:target:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage20getTargetedSentimentFT12fromTextFileV10Foundation3URL11withTargetsSS7failureGSqFPs5Error_T__7successFVS_17SentimentResponseT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getTargetedSentiment(fromTextFile:withTargets:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage20getTargetedSentimentFT12fromTextFileV10Foundation3URL11withTargetsSS7failureGSqFPs5Error_T__7successFVS_17SentimentResponseT__T_">getTargetedSentiment(fromTextFile:withTargets:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -3071,10 +3184,10 @@ The fact URL is required here is a bug.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getTargetedSentiment</span><span class="p">(</span>
-        <span class="n">forText</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">NSURL</span><span class="p">,</span>
-        <span class="nv">target</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/SentimentResponse.html">SentimentResponse</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="n">fromTextFile</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span>
+        <span class="n">withTargets</span> <span class="nv">targets</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/SentimentResponse.html">SentimentResponse</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -3098,12 +3211,12 @@ The fact URL is required here is a bug.</p>
                             <tr>
                               <td>
                                 <code>
-                                <em>target</em>
+                                <em>targets</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>a pharse to target analysis towards</p>
+                                  <p>a pipe delimited list of phrases to target analysis towards</p>
 
                                 </div>
                               </td>
@@ -3143,9 +3256,9 @@ The fact URL is required here is a bug.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage17getRankedTaxonomyFT6forURLSS7failureGSqFCSo7NSErrorT__7successFVS_10TaxonomiesT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getRankedTaxonomy(forURL:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage17getRankedTaxonomyFT6forURLSS7failureGSqFCSo7NSErrorT__7successFVS_10TaxonomiesT__T_">getRankedTaxonomy(forURL:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage17getRankedTaxonomyFT16fromContentAtURLSS7failureGSqFPs5Error_T__7successFVS_10TaxonomiesT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getRankedTaxonomy(fromContentAtURL:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage17getRankedTaxonomyFT16fromContentAtURLSS7failureGSqFPs5Error_T__7successFVS_10TaxonomiesT__T_">getRankedTaxonomy(fromContentAtURL:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -3161,9 +3274,9 @@ The fact URL is required here is a bug.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getRankedTaxonomy</span><span class="p">(</span>
-        <span class="n">forURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/Taxonomies.html">Taxonomies</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="n">fromContentAtURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Taxonomies.html">Taxonomies</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -3219,9 +3332,9 @@ The fact URL is required here is a bug.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage17getRankedTaxonomyFT7forHtmlCSo5NSURL3urlGSqSS_7failureGSqFCSo7NSErrorT__7successFVS_10TaxonomiesT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getRankedTaxonomy(forHtml:url:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage17getRankedTaxonomyFT7forHtmlCSo5NSURL3urlGSqSS_7failureGSqFCSo7NSErrorT__7successFVS_10TaxonomiesT__T_">getRankedTaxonomy(forHtml:url:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage17getRankedTaxonomyFT12fromHTMLFileV10Foundation3URL5atURLGSqSS_7failureGSqFPs5Error_T__7successFVS_10TaxonomiesT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getRankedTaxonomy(fromHTMLFile:atURL:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage17getRankedTaxonomyFT12fromHTMLFileV10Foundation3URL5atURLGSqSS_7failureGSqFPs5Error_T__7successFVS_10TaxonomiesT__T_">getRankedTaxonomy(fromHTMLFile:atURL:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -3237,10 +3350,10 @@ The fact URL is required here is a bug.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getRankedTaxonomy</span><span class="p">(</span>
-        <span class="n">forHtml</span> <span class="nv">html</span><span class="p">:</span> <span class="kt">NSURL</span><span class="p">,</span>
-        <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/Taxonomies.html">Taxonomies</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="n">fromHTMLFile</span> <span class="nv">html</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span>
+        <span class="n">atURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Taxonomies.html">Taxonomies</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -3309,9 +3422,9 @@ The fact URL is required here is a bug.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage17getRankedTaxonomyFT7forTextCSo5NSURL7failureGSqFCSo7NSErrorT__7successFVS_10TaxonomiesT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getRankedTaxonomy(forText:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage17getRankedTaxonomyFT7forTextCSo5NSURL7failureGSqFCSo7NSErrorT__7successFVS_10TaxonomiesT__T_">getRankedTaxonomy(forText:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage17getRankedTaxonomyFT12fromTextFileV10Foundation3URL7failureGSqFPs5Error_T__7successFVS_10TaxonomiesT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getRankedTaxonomy(fromTextFile:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage17getRankedTaxonomyFT12fromTextFileV10Foundation3URL7failureGSqFPs5Error_T__7successFVS_10TaxonomiesT__T_">getRankedTaxonomy(fromTextFile:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -3327,9 +3440,9 @@ The fact URL is required here is a bug.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getRankedTaxonomy</span><span class="p">(</span>
-        <span class="n">forText</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">NSURL</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/Taxonomies.html">Taxonomies</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="n">fromTextFile</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Taxonomies.html">Taxonomies</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -3385,9 +3498,9 @@ The fact URL is required here is a bug.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage10getRawTextFT6forURLSS7failureGSqFCSo7NSErrorT__7successFVS_12DocumentTextT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getRawText(forURL:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage10getRawTextFT6forURLSS7failureGSqFCSo7NSErrorT__7successFVS_12DocumentTextT__T_">getRawText(forURL:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage10getRawTextFT16fromContentAtURLSS7failureGSqFPs5Error_T__7successFVS_12DocumentTextT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getRawText(fromContentAtURL:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage10getRawTextFT16fromContentAtURLSS7failureGSqFPs5Error_T__7successFVS_12DocumentTextT__T_">getRawText(fromContentAtURL:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -3403,9 +3516,9 @@ The fact URL is required here is a bug.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getRawText</span><span class="p">(</span>
-        <span class="n">forURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/DocumentText.html">DocumentText</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="n">fromContentAtURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/DocumentText.html">DocumentText</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -3461,9 +3574,9 @@ The fact URL is required here is a bug.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage10getRawTextFT7forHtmlCSo5NSURL3urlGSqSS_7failureGSqFCSo7NSErrorT__7successFVS_12DocumentTextT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getRawText(forHtml:url:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage10getRawTextFT7forHtmlCSo5NSURL3urlGSqSS_7failureGSqFCSo7NSErrorT__7successFVS_12DocumentTextT__T_">getRawText(forHtml:url:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage10getRawTextFT12fromHTMLFileV10Foundation3URL7withURLGSqSS_7failureGSqFPs5Error_T__7successFVS_12DocumentTextT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getRawText(fromHTMLFile:withURL:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage10getRawTextFT12fromHTMLFileV10Foundation3URL7withURLGSqSS_7failureGSqFPs5Error_T__7successFVS_12DocumentTextT__T_">getRawText(fromHTMLFile:withURL:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -3479,10 +3592,10 @@ The fact URL is required here is a bug.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getRawText</span><span class="p">(</span>
-        <span class="n">forHtml</span> <span class="nv">html</span><span class="p">:</span> <span class="kt">NSURL</span><span class="p">,</span>
-        <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/DocumentText.html">DocumentText</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="n">fromHTMLFile</span> <span class="nv">html</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span>
+        <span class="n">withURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/DocumentText.html">DocumentText</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -3551,9 +3664,9 @@ The fact URL is required here is a bug.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage7getTextFT6forURLSS11useMetadataGSqOS_10QueryParam_12extractLinksGSqS1__7failureGSqFCSo7NSErrorT__7successFVS_12DocumentTextT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getText(forURL:useMetadata:extractLinks:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage7getTextFT6forURLSS11useMetadataGSqOS_10QueryParam_12extractLinksGSqS1__7failureGSqFCSo7NSErrorT__7successFVS_12DocumentTextT__T_">getText(forURL:useMetadata:extractLinks:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage7getTextFT16fromContentAtURLSS11useMetadataGSqOS_10QueryParam_12extractLinksGSqS1__7failureGSqFPs5Error_T__7successFVS_12DocumentTextT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getText(fromContentAtURL:useMetadata:extractLinks:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage7getTextFT16fromContentAtURLSS11useMetadataGSqOS_10QueryParam_12extractLinksGSqS1__7failureGSqFPs5Error_T__7successFVS_12DocumentTextT__T_">getText(fromContentAtURL:useMetadata:extractLinks:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -3569,11 +3682,11 @@ The fact URL is required here is a bug.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getText</span><span class="p">(</span>
-        <span class="n">forURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+        <span class="n">fromContentAtURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
         <span class="nv">useMetadata</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
         <span class="nv">extractLinks</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/DocumentText.html">DocumentText</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/DocumentText.html">DocumentText</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -3655,9 +3768,9 @@ The fact URL is required here is a bug.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage7getTextFT7forHtmlCSo5NSURL3urlGSqSS_11useMetadataGSqOS_10QueryParam_12extractLinksGSqS2__7failureGSqFCSo7NSErrorT__7successFVS_12DocumentTextT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getText(forHtml:url:useMetadata:extractLinks:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage7getTextFT7forHtmlCSo5NSURL3urlGSqSS_11useMetadataGSqOS_10QueryParam_12extractLinksGSqS2__7failureGSqFCSo7NSErrorT__7successFVS_12DocumentTextT__T_">getText(forHtml:url:useMetadata:extractLinks:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage7getTextFT12fromHTMLFileV10Foundation3URL7withURLGSqSS_11useMetadataGSqOS_10QueryParam_12extractLinksGSqS3__7failureGSqFPs5Error_T__7successFVS_12DocumentTextT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getText(fromHTMLFile:withURL:useMetadata:extractLinks:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage7getTextFT12fromHTMLFileV10Foundation3URL7withURLGSqSS_11useMetadataGSqOS_10QueryParam_12extractLinksGSqS3__7failureGSqFPs5Error_T__7successFVS_12DocumentTextT__T_">getText(fromHTMLFile:withURL:useMetadata:extractLinks:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -3673,12 +3786,12 @@ The fact URL is required here is a bug.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getText</span><span class="p">(</span>
-        <span class="n">forHtml</span> <span class="nv">html</span><span class="p">:</span> <span class="kt">NSURL</span><span class="p">,</span>
-        <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="n">fromHTMLFile</span> <span class="nv">html</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span>
+        <span class="n">withURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
         <span class="nv">useMetadata</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
         <span class="nv">extractLinks</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/DocumentText.html">DocumentText</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/DocumentText.html">DocumentText</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -3773,9 +3886,9 @@ The fact URL is required here is a bug.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage8getTitleFT6forURLSS11useMetadataGSqOS_10QueryParam_7failureGSqFCSo7NSErrorT__7successFVS_13DocumentTitleT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getTitle(forURL:useMetadata:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage8getTitleFT6forURLSS11useMetadataGSqOS_10QueryParam_7failureGSqFCSo7NSErrorT__7successFVS_13DocumentTitleT__T_">getTitle(forURL:useMetadata:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage8getTitleFT16fromContentAtURLSS11useMetadataGSqOS_10QueryParam_7failureGSqFPs5Error_T__7successFVS_13DocumentTitleT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getTitle(fromContentAtURL:useMetadata:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage8getTitleFT16fromContentAtURLSS11useMetadataGSqOS_10QueryParam_7failureGSqFPs5Error_T__7successFVS_13DocumentTitleT__T_">getTitle(fromContentAtURL:useMetadata:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -3791,10 +3904,10 @@ The fact URL is required here is a bug.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getTitle</span><span class="p">(</span>
-        <span class="n">forURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+        <span class="n">fromContentAtURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
         <span class="nv">useMetadata</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/DocumentTitle.html">DocumentTitle</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/DocumentTitle.html">DocumentTitle</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -3850,9 +3963,9 @@ The fact URL is required here is a bug.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage8getTitleFT7forHtmlCSo5NSURL3urlGSqSS_11useMetadataGSqOS_10QueryParam_7failureGSqFCSo7NSErrorT__7successFVS_13DocumentTitleT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getTitle(forHtml:url:useMetadata:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage8getTitleFT7forHtmlCSo5NSURL3urlGSqSS_11useMetadataGSqOS_10QueryParam_7failureGSqFCSo7NSErrorT__7successFVS_13DocumentTitleT__T_">getTitle(forHtml:url:useMetadata:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage8getTitleFT12fromHTMLFileV10Foundation3URL7withURLGSqSS_11useMetadataGSqOS_10QueryParam_7failureGSqFPs5Error_T__7successFVS_13DocumentTitleT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getTitle(fromHTMLFile:withURL:useMetadata:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage8getTitleFT12fromHTMLFileV10Foundation3URL7withURLGSqSS_11useMetadataGSqOS_10QueryParam_7failureGSqFPs5Error_T__7successFVS_13DocumentTitleT__T_">getTitle(fromHTMLFile:withURL:useMetadata:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -3868,11 +3981,11 @@ The fact URL is required here is a bug.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getTitle</span><span class="p">(</span>
-        <span class="n">forHtml</span> <span class="nv">html</span><span class="p">:</span> <span class="kt">NSURL</span><span class="p">,</span>
-        <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="n">fromHTMLFile</span> <span class="nv">html</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span>
+        <span class="n">withURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
         <span class="nv">useMetadata</span><span class="p">:</span> <span class="kt"><a href="../Enums/QueryParam.html">QueryParam</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/DocumentTitle.html">DocumentTitle</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/DocumentTitle.html">DocumentTitle</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -3941,9 +4054,9 @@ The fact URL is required here is a bug.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage12getFeedLinksFT6forURLSS7failureGSqFCSo7NSErrorT__7successFVS_5FeedsT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getFeedLinks(forURL:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage12getFeedLinksFT6forURLSS7failureGSqFCSo7NSErrorT__7successFVS_5FeedsT__T_">getFeedLinks(forURL:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage12getFeedLinksFT16fromContentAtURLSS7failureGSqFPs5Error_T__7successFVS_5FeedsT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getFeedLinks(fromContentAtURL:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage12getFeedLinksFT16fromContentAtURLSS7failureGSqFPs5Error_T__7successFVS_5FeedsT__T_">getFeedLinks(fromContentAtURL:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -3959,9 +4072,9 @@ The fact URL is required here is a bug.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getFeedLinks</span><span class="p">(</span>
-        <span class="n">forURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/Feeds.html">Feeds</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="n">fromContentAtURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Feeds.html">Feeds</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -4017,9 +4130,9 @@ The fact URL is required here is a bug.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage12getFeedLinksFT7forHtmlCSo5NSURL3urlGSqSS_7failureGSqFCSo7NSErrorT__7successFVS_5FeedsT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getFeedLinks(forHtml:url:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage12getFeedLinksFT7forHtmlCSo5NSURL3urlGSqSS_7failureGSqFCSo7NSErrorT__7successFVS_5FeedsT__T_">getFeedLinks(forHtml:url:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage12getFeedLinksFT12fromHTMLFileV10Foundation3URL7withURLGSqSS_7failureGSqFPs5Error_T__7successFVS_5FeedsT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getFeedLinks(fromHTMLFile:withURL:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage12getFeedLinksFT12fromHTMLFileV10Foundation3URL7withURLGSqSS_7failureGSqFPs5Error_T__7successFVS_5FeedsT__T_">getFeedLinks(fromHTMLFile:withURL:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -4036,10 +4149,10 @@ The fact that URL is required here is a bug.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getFeedLinks</span><span class="p">(</span>
-        <span class="n">forHtml</span> <span class="nv">html</span><span class="p">:</span> <span class="kt">NSURL</span><span class="p">,</span>
-        <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="s">" "</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/Feeds.html">Feeds</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="n">fromHTMLFile</span> <span class="nv">html</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span>
+        <span class="n">withURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="s">" "</span><span class="p">,</span>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Feeds.html">Feeds</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -4108,9 +4221,9 @@ The fact that URL is required here is a bug.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage10getEmotionFT6forURLSS7failureGSqFCSo7NSErrorT__7successFVS_15DocumentEmotionT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getEmotion(forURL:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage10getEmotionFT6forURLSS7failureGSqFCSo7NSErrorT__7successFVS_15DocumentEmotionT__T_">getEmotion(forURL:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage10getEmotionFT16fromContentAtURLSS7failureGSqFPs5Error_T__7successFVS_15DocumentEmotionT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getEmotion(fromContentAtURL:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage10getEmotionFT16fromContentAtURLSS7failureGSqFPs5Error_T__7successFVS_15DocumentEmotionT__T_">getEmotion(fromContentAtURL:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -4126,9 +4239,9 @@ The fact that URL is required here is a bug.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getEmotion</span><span class="p">(</span>
-        <span class="n">forURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/DocumentEmotion.html">DocumentEmotion</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="n">fromContentAtURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/DocumentEmotion.html">DocumentEmotion</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -4184,9 +4297,9 @@ The fact that URL is required here is a bug.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage10getEmotionFT7forHtmlCSo5NSURL3urlGSqSS_7failureGSqFCSo7NSErrorT__7successFVS_15DocumentEmotionT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getEmotion(forHtml:url:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage10getEmotionFT7forHtmlCSo5NSURL3urlGSqSS_7failureGSqFCSo7NSErrorT__7successFVS_15DocumentEmotionT__T_">getEmotion(forHtml:url:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage10getEmotionFT12fromHTMLFileV10Foundation3URL7withURLGSqSS_7failureGSqFPs5Error_T__7successFVS_15DocumentEmotionT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getEmotion(fromHTMLFile:withURL:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage10getEmotionFT12fromHTMLFileV10Foundation3URL7withURLGSqSS_7failureGSqFPs5Error_T__7successFVS_15DocumentEmotionT__T_">getEmotion(fromHTMLFile:withURL:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -4202,10 +4315,10 @@ The fact that URL is required here is a bug.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getEmotion</span><span class="p">(</span>
-        <span class="n">forHtml</span> <span class="nv">html</span><span class="p">:</span> <span class="kt">NSURL</span><span class="p">,</span>
-        <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/DocumentEmotion.html">DocumentEmotion</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="n">fromHTMLFile</span> <span class="nv">html</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span>
+        <span class="n">withURL</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/DocumentEmotion.html">DocumentEmotion</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -4274,9 +4387,9 @@ The fact that URL is required here is a bug.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage10getEmotionFT7forTextCSo5NSURL7failureGSqFCSo7NSErrorT__7successFVS_15DocumentEmotionT__T_"></a>
-                    <a name="//apple_ref/swift/Method/getEmotion(forText:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage10getEmotionFT7forTextCSo5NSURL7failureGSqFCSo7NSErrorT__7successFVS_15DocumentEmotionT__T_">getEmotion(forText:failure:success:)</a>
+                    <a name="/s:FC17AlchemyLanguageV115AlchemyLanguage10getEmotionFT12fromTextFileV10Foundation3URL7failureGSqFPs5Error_T__7successFVS_15DocumentEmotionT__T_"></a>
+                    <a name="//apple_ref/swift/Method/getEmotion(fromTextFile:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC17AlchemyLanguageV115AlchemyLanguage10getEmotionFT12fromTextFileV10Foundation3URL7failureGSqFPs5Error_T__7successFVS_15DocumentEmotionT__T_">getEmotion(fromTextFile:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -4292,9 +4405,9 @@ The fact that URL is required here is a bug.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getEmotion</span><span class="p">(</span>
-        <span class="n">forText</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">NSURL</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/DocumentEmotion.html">DocumentEmotion</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="n">fromTextFile</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/DocumentEmotion.html">DocumentEmotion</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -4352,8 +4465,8 @@ The fact that URL is required here is a bug.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2016 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2016-09-14)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2016 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2016-11-07)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

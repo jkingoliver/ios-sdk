@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>OutputData Struct Reference</title>
+    <title>System Struct Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Struct/OutputData" class="dashAnchor"></a>
-    <a title="OutputData Struct Reference"></a>
+    <a name="//apple_ref/swift/Struct/System" class="dashAnchor"></a>
+    <a title="System Struct Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a></p>
@@ -22,7 +22,7 @@
       <p id="breadcrumbs">
         <a href="../index.html"> Reference</a>
         <img id="carat" src="../img/carat.png" />
-        OutputData Struct Reference
+        System Struct Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -46,25 +46,25 @@
                 <a href="../Structs/Entity.html">Entity</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/EntityLocation.html">EntityLocation</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/InputData.html">InputData</a>
+                <a href="../Structs/Input.html">Input</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/Intent.html">Intent</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/LogMessageResponse.html">LogMessageResponse</a>
+                <a href="../Structs/LogMessage.html">LogMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MessageRequest.html">MessageRequest</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/MessageResponse.html">MessageResponse</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/OutputData.html">OutputData</a>
+                <a href="../Structs/Output.html">Output</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/SystemResponse.html">SystemResponse</a>
+                <a href="../Structs/System.html">System</a>
               </li>
             </ul>
           </li>
@@ -81,14 +81,14 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>OutputData</h1>
+            <h1>System</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">OutputData</span><span class="p">:</span> <span class="kt">JSONEncodable</span><span class="p">,</span> <span class="kt">JSONDecodable</span></code></pre>
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">System</span><span class="p">:</span> <span class="kt">JSONEncodable</span><span class="p">,</span> <span class="kt">JSONDecodable</span></code></pre>
 
                 </div>
               </div>
-            <p>An output object that includes the response to the user, the nodes that were hit, and messages from the log.</p>
+            <p>A system object that includes information about the dialog.</p>
 
           </section>
           <section class="section task-group-section">
@@ -97,9 +97,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vV14ConversationV110OutputData11logMessagesGSaVS_18LogMessageResponse_"></a>
-                    <a name="//apple_ref/swift/Property/logMessages" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vV14ConversationV110OutputData11logMessagesGSaVS_18LogMessageResponse_">logMessages</a>
+                    <a name="/s:vV14ConversationV16System4jsonGVs10DictionarySSP__"></a>
+                    <a name="//apple_ref/swift/Property/json" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV14ConversationV16System4jsonGVs10DictionarySSP__">json</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -107,14 +107,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>An array of up to 50 messages logged with the request.</p>
+                        <p>The raw JSON object used to construct this model.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">logMessages</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/LogMessageResponse.html">LogMessageResponse</a></span><span class="p">]</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">json</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">Any</span><span class="p">]</span></code></pre>
 
                         </div>
                       </div>
@@ -124,9 +124,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vV14ConversationV110OutputData4textGSaSS_"></a>
-                    <a name="//apple_ref/swift/Property/text" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vV14ConversationV110OutputData4textGSaSS_">text</a>
+                    <a name="/s:vV14ConversationV16System11dialogStackGSaSS_"></a>
+                    <a name="//apple_ref/swift/Property/dialogStack" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV14ConversationV16System11dialogStackGSaSS_">dialogStack</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -134,14 +134,18 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>An array of responses to the user.</p>
+                        <p>An array of dialog node ids that are in focus in the conversation. If no node is in the
+list, the conversation restarts at the root with the next request. If multiple dialog nodes
+are in the list, several dialogs are in progress, and the last ID in the list is active.
+When the active dialog ends, it is removed from the stack and the previous one becomes
+active.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">text</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">dialogStack</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
 
                         </div>
                       </div>
@@ -151,9 +155,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vV14ConversationV110OutputData12nodesVisitedGSaSS_"></a>
-                    <a name="//apple_ref/swift/Property/nodesVisited" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vV14ConversationV110OutputData12nodesVisitedGSaSS_">nodesVisited</a>
+                    <a name="/s:vV14ConversationV16System17dialogTurnCounterSi"></a>
+                    <a name="//apple_ref/swift/Property/dialogTurnCounter" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV14ConversationV16System17dialogTurnCounterSi">dialogTurnCounter</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -161,15 +165,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>An array of the nodes that were executed to create the response. The information is
-useful for debugging and for visualizing the path taken through the node tree.</p>
+                        <p>The number of cycles of user input and response in this conversation.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">nodesVisited</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">dialogTurnCounter</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
 
                         </div>
                       </div>
@@ -179,9 +182,9 @@ useful for debugging and for visualizing the path taken through the node tree.</
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FV14ConversationV110OutputDatacFT11logMessagesGSaVS_18LogMessageResponse_4textGSaSS_12nodesVisitedGSaSS__S0_"></a>
-                    <a name="//apple_ref/swift/Method/init(logMessages:text:nodesVisited:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FV14ConversationV110OutputDatacFT11logMessagesGSaVS_18LogMessageResponse_4textGSaSS_12nodesVisitedGSaSS__S0_">init(logMessages:text:nodesVisited:)</a>
+                    <a name="/s:vV14ConversationV16System20dialogRequestCounterSi"></a>
+                    <a name="//apple_ref/swift/Property/dialogRequestCounter" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV14ConversationV16System20dialogRequestCounterSi">dialogRequestCounter</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -189,62 +192,17 @@ useful for debugging and for visualizing the path taken through the node tree.</
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Create an <code>OutputData</code>.</p>
+                        <p>The number of inputs in this conversation. This counter might be higher than the
+<code><a href="../Structs/System.html#/s:vV14ConversationV16System17dialogTurnCounterSi">dialogTurnCounter</a></code> when multiple inputs are needed before a response can be returned.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">logMessages</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/LogMessageResponse.html">LogMessageResponse</a></span><span class="p">],</span> <span class="nv">text</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">],</span> <span class="nv">nodesVisited</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">dialogRequestCounter</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
 
                         </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>logMessages</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>An array of up to 50 messages logged with the request.</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>text</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>An array of responses to the user.</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>nodesVisited</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>An array of the nodes that were executed to create the response. The information is iseful for debugging and for visualizing the path taken through the node tree.</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
                       </div>
                     </section>
                   </div>
@@ -252,9 +210,9 @@ useful for debugging and for visualizing the path taken through the node tree.</
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FV14ConversationV110OutputDatacERR"></a>
+                    <a name="/s:FV14ConversationV16SystemcFzT4jsonV7RestKit4JSON_S0_"></a>
                     <a name="//apple_ref/swift/Method/init(json:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FV14ConversationV110OutputDatacERR">init(json:)</a>
+                    <a class="token" href="#/s:FV14ConversationV16SystemcFzT4jsonV7RestKit4JSON_S0_">init(json:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -262,7 +220,7 @@ useful for debugging and for visualizing the path taken through the node tree.</
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Used internally to initialize an <code>OutputData</code> model from JSON.</p>
+                        <p>Used internally to initialize a <code>System</code> model from JSON.</p>
 
                       </div>
                       <div class="declaration">
@@ -279,9 +237,9 @@ useful for debugging and for visualizing the path taken through the node tree.</
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FV14ConversationV110OutputData6toJSONERR"></a>
-                    <a name="//apple_ref/swift/Method/toJSON()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FV14ConversationV110OutputData6toJSONERR">toJSON()</a>
+                    <a name="/s:FV14ConversationV16System12toJSONObjectFT_P_"></a>
+                    <a name="//apple_ref/swift/Method/toJSONObject()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV14ConversationV16System12toJSONObjectFT_P_">toJSONObject()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -289,14 +247,14 @@ useful for debugging and for visualizing the path taken through the node tree.</
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Used internally to serialize an <code>OutputData</code> model to JSON.</p>
+                        <p>Used internally to serialize a <code>System</code> model to JSON.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">toJSON</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">JSON</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">toJSONObject</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Any</span></code></pre>
 
                         </div>
                       </div>
@@ -308,8 +266,8 @@ useful for debugging and for visualizing the path taken through the node tree.</
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2016 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2016-09-14)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2016 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2016-11-07)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

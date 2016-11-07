@@ -46,25 +46,25 @@
                 <a href="../Structs/Entity.html">Entity</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/EntityLocation.html">EntityLocation</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/InputData.html">InputData</a>
+                <a href="../Structs/Input.html">Input</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/Intent.html">Intent</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/LogMessageResponse.html">LogMessageResponse</a>
+                <a href="../Structs/LogMessage.html">LogMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MessageRequest.html">MessageRequest</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/MessageResponse.html">MessageResponse</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/OutputData.html">OutputData</a>
+                <a href="../Structs/Output.html">Output</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/SystemResponse.html">SystemResponse</a>
+                <a href="../Structs/System.html">System</a>
               </li>
             </ul>
           </li>
@@ -99,9 +99,63 @@ to provide outstanding customer engagements.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC14ConversationV112ConversationcFT8usernameSS8passwordSS7versionSS10serviceURLSS_S0_"></a>
-                    <a name="//apple_ref/swift/Method/init(username:password:version:serviceURL:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC14ConversationV112ConversationcFT8usernameSS8passwordSS7versionSS10serviceURLSS_S0_">init(username:password:version:serviceURL:)</a>
+                    <a name="/s:vC14ConversationV112Conversation10serviceURLSS"></a>
+                    <a name="//apple_ref/swift/Property/serviceURL" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC14ConversationV112Conversation10serviceURLSS">serviceURL</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The base URL to use when contacting the service.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">serviceURL</span> <span class="o">=</span> <span class="s">"https://gateway.watsonplatform.net/conversation/api"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC14ConversationV112Conversation14defaultHeadersGVs10DictionarySSSS_"></a>
+                    <a name="//apple_ref/swift/Property/defaultHeaders" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC14ConversationV112Conversation14defaultHeadersGVs10DictionarySSSS_">defaultHeaders</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The default HTTP headers for all requests to the service.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">defaultHeaders</span> <span class="o">=</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">String</span><span class="p">]()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC14ConversationV112ConversationcFT8usernameSS8passwordSS7versionSS_S0_"></a>
+                    <a name="//apple_ref/swift/Method/init(username:password:version:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC14ConversationV112ConversationcFT8usernameSS8passwordSS7versionSS_S0_">init(username:password:version:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -116,11 +170,7 @@ to provide outstanding customer engagements.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
-        <span class="nv">username</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
-        <span class="nv">password</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
-        <span class="nv">version</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
-        <span class="nv">serviceURL</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">"https://gateway.watsonplatform.net/conversation/api"</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">username</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">password</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">version</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -167,19 +217,6 @@ to provide outstanding customer engagements.</p>
                                 </div>
                               </td>
                             </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>serviceURL</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The base URL to use when contacting the service.</p>
-
-                                </div>
-                              </td>
-                            </tr>
                           </tbody>
                         </table>
                       </div>
@@ -189,9 +226,9 @@ to provide outstanding customer engagements.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC14ConversationV112Conversation7messageFT11workspaceIDSS4textGSqSS_7contextGSqVS_7Context_7failureGSqFCSo7NSErrorT__7successFVS_15MessageResponseT__T_"></a>
-                    <a name="//apple_ref/swift/Method/message(workspaceID:text:context:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC14ConversationV112Conversation7messageFT11workspaceIDSS4textGSqSS_7contextGSqVS_7Context_7failureGSqFCSo7NSErrorT__7successFVS_15MessageResponseT__T_">message(workspaceID:text:context:failure:success:)</a>
+                    <a name="/s:FC14ConversationV112Conversation7messageFT13withWorkspaceSS7requestGSqVS_14MessageRequest_7failureGSqFPs5Error_T__7successFVS_15MessageResponseT__T_"></a>
+                    <a name="//apple_ref/swift/Method/message(withWorkspace:request:failure:success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC14ConversationV112Conversation7messageFT13withWorkspaceSS7requestGSqVS_14MessageRequest_7failureGSqFPs5Error_T__7successFVS_15MessageResponseT__T_">message(withWorkspace:request:failure:success:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -199,7 +236,8 @@ to provide outstanding customer engagements.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Start a new conversation or get a response to a user&rsquo;s input.</p>
+                        <p>Send a message to the Conversation service. To start a new conversation set the <code>request</code>
+parameter to <code>nil</code>.</p>
 
                       </div>
                       <div class="declaration">
@@ -207,11 +245,10 @@ to provide outstanding customer engagements.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">message</span><span class="p">(</span>
-        <span class="nv">workspaceID</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:14ConversationV111WorkspaceID">WorkspaceID</a></span><span class="p">,</span>
-        <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">context</span><span class="p">:</span> <span class="kt"><a href="../Structs/Context.html">Context</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/MessageResponse.html">MessageResponse</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+        <span class="n">withWorkspace</span> <span class="nv">workspaceID</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:14ConversationV111WorkspaceID">WorkspaceID</a></span><span class="p">,</span>
+        <span class="nv">request</span><span class="p">:</span> <span class="kt"><a href="../Structs/MessageRequest.html">MessageRequest</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+        <span class="nv">success</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/MessageResponse.html">MessageResponse</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -222,7 +259,7 @@ to provide outstanding customer engagements.</p>
                             <tr>
                               <td>
                                 <code>
-                                <em>workspaceID</em>
+                                <em>withWorkspace</em>
                                 </code>
                               </td>
                               <td>
@@ -235,171 +272,12 @@ to provide outstanding customer engagements.</p>
                             <tr>
                               <td>
                                 <code>
-                                <em>text</em>
+                                <em>request</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>The user’s input message.</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>context</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The context, or state, associated with this request. Use a <code>nil</code> context to start a new conversation.</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>failure</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>A function executed if an error occurs.</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>success</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>A function executed with the conversation service’s response.</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:FC14ConversationV112Conversation7messageFT11workspaceIDSS5inputVS_9InputData7contextGSqVS_7Context_8entitiesGSqGSaVS_6Entity__7intentsGSqGSaVS_6Intent__6outputGSqVS_10OutputData_7failureGSqFCSo7NSErrorT__7successFVS_15MessageResponseT__T_"></a>
-                    <a name="//apple_ref/swift/Method/message(workspaceID:input:context:entities:intents:output:failure:success:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC14ConversationV112Conversation7messageFT11workspaceIDSS5inputVS_9InputData7contextGSqVS_7Context_8entitiesGSqGSaVS_6Entity__7intentsGSqGSaVS_6Intent__6outputGSqVS_10OutputData_7failureGSqFCSo7NSErrorT__7successFVS_15MessageResponseT__T_">message(workspaceID:input:context:entities:intents:output:failure:success:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Start a new conversation or get a response to a user&rsquo;s input.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">message</span><span class="p">(</span>
-        <span class="nv">workspaceID</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:14ConversationV111WorkspaceID">WorkspaceID</a></span><span class="p">,</span>
-        <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/InputData.html">InputData</a></span><span class="p">,</span>
-        <span class="nv">context</span><span class="p">:</span> <span class="kt"><a href="../Structs/Context.html">Context</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">entities</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/Entity.html">Entity</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">intents</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/Intent.html">Intent</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">output</span><span class="p">:</span> <span class="kt"><a href="../Structs/OutputData.html">OutputData</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">failure</span><span class="p">:</span> <span class="p">(</span><span class="kt">NSError</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-        <span class="nv">success</span><span class="p">:</span> <span class="kt"><a href="../Structs/MessageResponse.html">MessageResponse</a></span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>workspaceID</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The unique identifier of the workspace to use.</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>input</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>An input object that includes the input text.</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>context</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The context, or state, associated with this request.</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>entities</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>An array of terms that shall be identified as entities</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>intents</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>An array of terms that shall be identified as intents.</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>output</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>An output object that includes the response to the user, the nodes that were hit, and messages from the log.</p>
+                                  <p>The message requst to send to the server.</p>
 
                                 </div>
                               </td>
@@ -441,8 +319,8 @@ to provide outstanding customer engagements.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2016 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2016-09-14)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2016 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2016-11-07)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

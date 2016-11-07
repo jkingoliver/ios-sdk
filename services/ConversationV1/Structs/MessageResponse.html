@@ -46,25 +46,25 @@
                 <a href="../Structs/Entity.html">Entity</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/EntityLocation.html">EntityLocation</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/InputData.html">InputData</a>
+                <a href="../Structs/Input.html">Input</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/Intent.html">Intent</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/LogMessageResponse.html">LogMessageResponse</a>
+                <a href="../Structs/LogMessage.html">LogMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MessageRequest.html">MessageRequest</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/MessageResponse.html">MessageResponse</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/OutputData.html">OutputData</a>
+                <a href="../Structs/Output.html">Output</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/SystemResponse.html">SystemResponse</a>
+                <a href="../Structs/System.html">System</a>
               </li>
             </ul>
           </li>
@@ -97,9 +97,36 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vV14ConversationV115MessageResponse5inputVS_9InputData"></a>
+                    <a name="/s:vV14ConversationV115MessageResponse4jsonGVs10DictionarySSP__"></a>
+                    <a name="//apple_ref/swift/Property/json" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV14ConversationV115MessageResponse4jsonGVs10DictionarySSP__">json</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The raw JSON object used to construct this model.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">json</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">Any</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV14ConversationV115MessageResponse5inputGSqVS_5Input_"></a>
                     <a name="//apple_ref/swift/Property/input" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vV14ConversationV115MessageResponse5inputVS_9InputData">input</a>
+                    <a class="token" href="#/s:vV14ConversationV115MessageResponse5inputGSqVS_5Input_">input</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -114,7 +141,35 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/InputData.html">InputData</a></span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Input.html">Input</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV14ConversationV115MessageResponse16alternateIntentsGSqSb_"></a>
+                    <a name="//apple_ref/swift/Property/alternateIntents" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV14ConversationV115MessageResponse16alternateIntentsGSqSb_">alternateIntents</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether to return more than one intent.
+Included in the response only when sent with the request.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">alternateIntents</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -161,7 +216,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>An array of terms from the request that were identified as entities.</p>
+                        <p>An array of terms from the request that were identified as entities.
+The array is empty if no entities were identified.</p>
 
                       </div>
                       <div class="declaration">
@@ -188,9 +244,10 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>An array of terms from the request that were identified as intents. The list is sorted in
-descending order of confidence. If there are 10 or fewer intents, the sum of the confidence
-values is 100%.</p>
+                        <p>An array of terms from the request that were identified as intents. Each intent has an
+associated confidence. The list is sorted in descending order of confidence. If there are
+10 or fewer intents then the sum of the confidence values is 100%. The array is empty if
+no intents were identified.</p>
 
                       </div>
                       <div class="declaration">
@@ -207,9 +264,9 @@ values is 100%.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vV14ConversationV115MessageResponse6outputVS_10OutputData"></a>
+                    <a name="/s:vV14ConversationV115MessageResponse6outputVS_6Output"></a>
                     <a name="//apple_ref/swift/Property/output" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vV14ConversationV115MessageResponse6outputVS_10OutputData">output</a>
+                    <a class="token" href="#/s:vV14ConversationV115MessageResponse6outputVS_6Output">output</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -225,7 +282,7 @@ the nodes that were hit, and messages from the log.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">output</span><span class="p">:</span> <span class="kt"><a href="../Structs/OutputData.html">OutputData</a></span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">output</span><span class="p">:</span> <span class="kt"><a href="../Structs/Output.html">Output</a></span></code></pre>
 
                         </div>
                       </div>
@@ -235,9 +292,9 @@ the nodes that were hit, and messages from the log.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FV14ConversationV115MessageResponsecERR"></a>
+                    <a name="/s:FV14ConversationV115MessageResponsecFzT4jsonV7RestKit4JSON_S0_"></a>
                     <a name="//apple_ref/swift/Method/init(json:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FV14ConversationV115MessageResponsecERR">init(json:)</a>
+                    <a class="token" href="#/s:FV14ConversationV115MessageResponsecFzT4jsonV7RestKit4JSON_S0_">init(json:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -264,8 +321,8 @@ the nodes that were hit, and messages from the log.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2016 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2016-09-14)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2016 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2016-11-07)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
